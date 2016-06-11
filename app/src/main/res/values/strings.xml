@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Usman</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home">home</string>
+    <string name="title_activity_sign_up">sign_up</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_add_booking">Add Booking</string>
+    <string name="title_activity_add_booking_map">Map</string>
+    <string name="title_activity_booking_details">bookingDetails</string>
+    <string name="title_activity_change_password">ChangePassword</string>
+    <string name="title_activity_pre_booking">PreBooking</string>
+
+    <string-array name="Genders">
+        <item>Male</item>
+        <item>Female</item>
+
+    </string-array>
+    <string-array name="Type">
+        <item>Saloon</item>
+        <item>Hi-Ace</item>
+        <item>Coaster</item>
+
+    </string-array>
+    <string-array name="Service">
+        <item>Regular</item>
+        <item>Shopping</item>
+        <item>Airport</item>
+        <item>Rent</item>
+        <item>School</item>
+    </string-array>
+</resources>

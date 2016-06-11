@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.haseebelahi.usman.bookingDetails">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_darker"
+        android:id="@+id/toolbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Your Booking" />
+
+    <TextView
+        android:id="@+id/route"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="route"
+        android:textStyle="bold|italic"
+        android:textSize="@dimen/_15sdp"
+        android:layout_below="@id/toolbar"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"/>
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/route"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:text="8 Km"
+        android:textSize="@dimen/_12sdp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"/>
+
+    <TextView
+        android:id="@+id/fare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/distance"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:textSize="@dimen/_12sdp"
+        android:text="50 rs"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"/>
+
+
+    <Button
+        android:id="@+id/choose_booking"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Deliver Booking"
+        android:layout_below="@id/fare"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/white"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"/>
+
+    <Button
+        android:id="@+id/cancel_booking"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel Booking"
+        android:layout_below="@id/choose_booking"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/white"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"/>
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@id/cancel_booking"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+</RelativeLayout>
